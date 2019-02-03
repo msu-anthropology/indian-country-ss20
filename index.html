@@ -9,14 +9,14 @@
 
     <title>This is Indian Country</title>
 
-    
+
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/leaflet.css" />
-    
+
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -24,7 +24,7 @@
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!--<script src="js/ie10-viewport-bug-workaround.js"></script>-->
-    
+
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -35,9 +35,9 @@
   </head>
 
   <body>
-      
+
       <!-- MODAL -->
-      
+
       <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-dialog modal-vertical-centered">
@@ -47,7 +47,7 @@
                         <h4 class="modal-title" id="myModalLabel">Welcome to <em>This is Indian Country</em> - Spring 2018</h4>
                     </div>
                     <div class="modal-body">
-                        <em>This is Indian Country</em> is a digital cultural map of indigenous community issues worldwide. Collaboratively produced at Michigan State University during the Spring 2018 semester by the students registered in the Contemporary American Indian Communities class (ANP 433), <em>This is Indian Country</em> represents an experiment in applied digital anthropology undergraduate learning. This single-semester version will be incorporated in some way into the <a target="_blank" href="https://msu-anthropology.io/indian-country">main, multi-semester version</a>.  
+                        <em>This is Indian Country</em> is a digital cultural map of indigenous community issues worldwide. Collaboratively produced at Michigan State University during the Spring 2019 semester by the students registered in the Contemporary American Indian Communities class (ANP 433), <em>This is Indian Country</em> represents an experiment in applied digital anthropology undergraduate learning. This single-semester version will be incorporated in some way into the <a target="_blank" href="https://msu-anthropology.io/indian-country">main, multi-semester version</a>.  
 
                     </div>
                     <div class="modal-footer">
@@ -58,14 +58,14 @@
             </div>
         </div>
       </div>
-    
+
       <!-- cenralized navbar -->
       <div id="central-nav"></div>
 
       <!-- MAP -->
       <div id="map"></div>
-     
-      <!-- centralized footer -->  
+
+      <!-- centralized footer -->
       <div id="central-foot"></div>
 
     <!-- Bootstrap core JavaScript
@@ -74,7 +74,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="leaflet-omnivore-master/leaflet-omnivore.js"></script>
-    <script src="js/leaflet.js"></script> 
+    <script src="js/leaflet.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$("a[rel=citation]").popover({
@@ -90,13 +90,13 @@
 	</script>
 
     <!-- Calls centralized navbar and footer -->
-    <script src="centralize-nav-foot/nav-foot.js"></script>	
-      
- <!-- Initiates Modal and Uses cookies for Dont Show Again Checkbox -->     
+    <script src="centralize-nav-foot/nav-foot.js"></script>
+
+ <!-- Initiates Modal and Uses cookies for Dont Show Again Checkbox -->
 <script type="text/javascript">
  $(document).ready(function () {
     $('#myModal').modal();
-  
+
    //check cookies
     function setCookie(){
         var dis = document.cookie;
@@ -106,23 +106,23 @@
         }
         console.log(dis.substring(8,13));
     }
-    setCookie();    
-     
-     
+    setCookie();
+
+
       var $check = $("input.dont").click(function(){
         if($("input.dont").is(":checked")){
-        document.cookie = "display=false";        
+        document.cookie = "display=false";
         }else{
-        document.cookie = "display=true";        
+        document.cookie = "display=true";
         }
-          
+
       });
  });
 </script>
- 
-      
-      
-<!-- Centers Modal Vertically -->      
+
+
+
+<!-- Centers Modal Vertically -->
 <script type="text/javascript">
       function centerModal() {
     $(this).css('display', 'block');
@@ -137,10 +137,10 @@ $(window).on("resize", function () {
     $('.modal:visible').each(centerModal);
 });
 </script>
-      
-      
-     
-<!-- Initiates Map and pulls data from .CSV --> 
+
+
+
+<!-- Initiates Map and pulls data from .CSV -->
 <script>
 
             var map = L.map('map', {
@@ -159,9 +159,9 @@ $(window).on("resize", function () {
             //enter path for .csv here
             omnivore.csv('sites-popup.csv')
              .on('ready', function(layer) {
-       
+
         this.eachLayer(function(marker) {
-          
+
             // Bind a popup to each icon based on the same properties
             // Adds coloumns of extra info to marker popup
             marker.bindPopup(marker.toGeoJSON().properties.issue +
@@ -171,9 +171,9 @@ $(window).on("resize", function () {
         });
     })
             .addTo(map);
-            
+
 </script>
-      
+
 
 
 
