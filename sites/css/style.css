@@ -47,7 +47,7 @@ body {
 		padding-top: 50px;
 		margin-left: 15px;
 		margin-right: 15px;
-	};
+	}
 }
 @media (min-width: 768px) {
 	#detail {
@@ -108,8 +108,17 @@ code {
 #about p,h1,h2,h3,h4,h5 {
 	padding-left: 15px;
 	padding-right: 15px;
+	color: #333;
+	line-height: 1.42857143;
+	letter-spacing: normal;
+	font-weight: normal;
 }
-
+.modal-body {
+	color: #333;
+	line-height: 1.42857143;
+	letter-spacing: normal;
+	font-weight: normal;
+}
 /* MAP CSS
 -------------------------------------------------- */
 
