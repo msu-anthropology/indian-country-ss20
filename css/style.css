@@ -72,7 +72,7 @@ code {
     text-align: left;
 }
 
-#about p,h2 {
+#about p,h1,h2,h3,h4,h5 {
 	padding-left: 15px;
 	padding-right: 15px;
 }
