@@ -105,7 +105,7 @@ code {
     text-align: left;
 }
 
-#about p,h1,h2,h3,h4,h5 {
+#about p, #about h1, #about h2, #about h3, #about h4, #about h5 {
 	padding-left: 15px;
 	padding-right: 15px;
 	color: #333;
