@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en"><script id="tinyhippos-injected">if (window.top.ripple) { window.top.ripple("bootstrap").inject(window, document); }</script><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Indian Country</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/leaflet.css" />
+	<link rel="stylesheet" href="../css/BootSideMenu.css">
+
+</head>
+
+  <body>
+
+
+    <!-- cenralized navbar -->
+    <div id="central-nav"></div>
+
+    <!-- Begin page content -->
+
+     <div id="detail">
+      <h1>name-1 TITLE Name name</h1>
+      <h3>NAME-1</h3>
+	  <h4>Zach Francis & Zach Francis</h4>
+         <h3>FIRST SECTION HEADING</h3>
+		 <hr><!--this draws a line across the page, which I put under each section heading in the example-->
+		 <p>Paragraph text goes between these</p>
+		 <a href="#" rel="citation" data-toggle="popover" data-content=""><!--this is the required <a href> tag for inline reference popups--></a>
+		 <br><!--this creates a break, to separate things a little better-->
+
+     <hr>
+     <figure style="padding-right:20px; padding-bottom: 5px; float: right; width: 30%">
+      <img src="img/gebel.jpeg" width="100%">
+      <figcaption><a href="#" rel="citation" data-toggle="popover" data-content="Image 1. The Egypt Exploration Society. Flickr.">Image 1</a></figcaption>
+     </figure>
+
+     <p> Roast organic body java bar, froth latte blue mountain extra, doppio barista kopi-luwak skinny iced frappuccino. Aftertaste coffee aroma in decaffeinated so iced at spoon latte beans, filter sugar a as aged blue mountain beans. Qui breve skinny white fair trade, percolator, trifecta rich robust, filter, bar café au lait, white organic flavour caffeine, qui saucer single shot and turkish. Affogato macchiato, percolator, roast variety con panna extraction caffeine eu carajillo frappuccino acerbic frappuccino café au lait crema. Sweet blue mountain organic iced roast et carajillo foam grounds skinny, robusta grounds eu redeye iced black grounds espresso cultivar froth. Roast americano, redeye strong shop acerbic arabica chicory filter, cup variety a, frappuccino arabica steamed sugar whipped robusta medium shop barista aged. Medium latte pumpkin spice frappuccino that trifecta grinder, so, java coffee instant et pumpkin spice crema. Con panna plunger pot qui half and half sit spoon, est barista percolator, coffee cream sit, rich americano steamed frappuccino plunger pot trifecta percolator. Chicory organic, foam medium kopi-luwak bar, decaffeinated aromatic strong grounds flavour lungo cortado. </p>
+     <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+
+       <br>
+         <br>
+
+    <!-- centralized footer -->
+    <div id="central-foot">
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/leaflet.js"></script>
+	<script src="../js/BootSideMenu.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("a[rel=citation]").popover({
+				placement : 'top'
+			}).click(function (p) {
+				p.preventDefault();
+				var $self = $(this);
+				setTimeout(function () {
+					$self.popover('hide');
+				}, 4000);
+			});
+		});
+	</script>
+
+    <!-- Calls centralized navbar -->
+    <script src="../../centralize-nav-foot/sites-nav-foot.js"></script>
+
+	</body></html>
